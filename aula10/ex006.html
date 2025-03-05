@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 1.3em Jetbrians Mono;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 180px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"</div> <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" Isso aqui tava dentro da div. Eu tirei por conta dos listeners-->
+        
+        <!-- Aqui é o método (clicar()), que vai disparar quando acontecer o clique(onclick). Quando acontecer o clique, vai acontecer o que ta mandando no JS. O mouseenter veio dps na explicação, mas é a mesma lógica. O mouseout tbm veio dps.-->
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area') //botar aqui fora vai fazer funcionar pras todas functions. MAS o Guanabara disse q isso é meio ruim de fazer.
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        //esses ngs são ouvidores, eles fazem o mesmo trabalho daqueles "onmouseenter", "onclick" etc... Evitando poluir o HTML, deixando tudo no JS.
+
+        function clicar() { // Aqui eu chamei a função clicar()
+            //var a = window.document.getElementById('area') liguei o objeto 'a' diretamente a div área.
+            a.innerText = 'Você clicou :)'
+            a.style.background = 'green'
+            a.style.color = 'white'
+        }
+        
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu :( '
+            a.style.background ='blue'
+            a.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
