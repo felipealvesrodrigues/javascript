@@ -1,8 +1,8 @@
 var c = 2 //cria a var
 do { // manda mostrar a var
     console.log(`Passo ${c}`) // mostra a var
-    c++ // c = c + 1 // adiciona mais um
-} while( c < 6) // testa pra ver se é menor igual a 6 
+    c+2 // c = c + 1 // adiciona mais um
+} while( c <= 6) // testa pra ver se é menor igual a 6 
 
 
 /* 
