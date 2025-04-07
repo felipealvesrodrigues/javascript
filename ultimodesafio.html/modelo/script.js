@@ -44,7 +44,7 @@ function finalizar() {
         let menor = valores[0]
         let soma = 0
         let media = 0
-        for(let pos in valores) {// Esse for percorre cada posição (índice) do array valores. Exemplo: se valores = [4, 8, 1], pos será "0", "1", "2"
+        for(let pos in valores) {// Esse 'for' percorre cada posição (índice) do array 'valores'. Exemplo: se 'valores' = [4, 8, 1], 'pos' será "0", "1", "2"
             soma += valores[pos]
             if (valores[pos] > maior) //Se o valor atual (valores[pos]) for maior que o valor guardado em maior, ele atualiza maior
                 maior = valores[pos]
