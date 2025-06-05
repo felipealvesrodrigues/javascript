@@ -1,16 +1,7 @@
-for(var c = 1; c<=10; c++){
-    console.log(`Temos ${c} niggas disponíveis`)
-}
-
-
-
-
-
-/*let c = 1
+let c = 1
 do {
     console.log(`Passo ${c}`)
-    c++
-} while (c <= 6)*/
+} while (c <= 6)
 
 
 
